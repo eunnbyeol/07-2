@@ -5,16 +5,14 @@
 
 int main(int argc, char *argv[]) {
 	
-	int flag = 1;
-	while(flag != 0)
-	{
-		int y;
-		y = 3;
-		flag = 0;
-	}
+	int i;
 	
-	int y;
-	y= 4; //제거하거나, int y; 추가 
+	for(i=0; i<5; i++)
+	{
+		int temp = 1;
+		printf("temp = %d\n", temp);
+		temp++;
+	 } 
 	
 	return 0;
 }
