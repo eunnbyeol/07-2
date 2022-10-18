@@ -2,17 +2,18 @@
 #include <stdlib.h>
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
+int counter;
+
+void set_counter()
+{
+	counter = 20;
+}
 
 int main(int argc, char *argv[]) {
+	printf("counter=%d\n", counter);
+	set_counter();
+    printf("counter=%d\n", counter);
 	
-	int i=10;
-	printf("함수 호출전 i=%d\n", i);
-	inc(i);
-	printf("함수 호출후 i=%d\n", i);
 	return 0;
 }
-int inc(int counter)
-{
-	counter++;
-	return counter;
- } 
+
